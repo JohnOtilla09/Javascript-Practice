@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice in Javascript</title>
+
+    <!-- Introduction to javascript -->
+
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            color: white;
+            line-height: 200px;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+
+    <!-- Introduction to javascript -->
+
+</head>
+<body>
+    
+    <!-- Introduction to javascript -->
+
+    
+    <div onclick="changeColor(this)" style="background-color: red;">
+        tap to change my color.
+    </div>
+
+    <script>
+
+        function changeColor(element) { // the element here is a varibale
+            var currentColor = element.style.backgroundColor;
+
+            if(currentColor == 'red') {
+                element.style.backgroundColor = "green";
+            } else {
+                element.style.backgroundColor = "red";
+            }
+        }
+
+    </script>
+
+    <!-- Introduction to javascript -->
+
+</body>
+</html>
