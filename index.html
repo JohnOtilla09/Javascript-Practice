@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="style.css">
 
+    
+
 </head>
 <body>
     
@@ -171,14 +173,154 @@
     </script> -->
 
     <!-- Boolean -->
-    <script>
+    <!-- <script>
         var x = 3;
         var y = 3;
         var isEqual = (x == y);
 
         document.write(isEqual);
-    </script>
+    </script> -->
+
+    <!-- Undefined Data Type -->
+    <!-- <script>
+        var title; // returns undefined
+        var fruit = null; // return null
+
+        document.write(title + "<br/>");
+        document.write(fruit);
+    </script> -->
+
+    <!-- Object Data Type -->
+    <!-- <script>
+        var cars = {
+            color: 'red',
+            brand: 'honda',
+            isAvailable: false
+        };
+
+        document.write(cars.brand + " " + cars.color + " " + cars.isAvailable);
+    </script> -->
+
+    <!-- Arrays -->
+    <!-- <script>
+        var fruits = ["Apples", "Oranges", "Banana"];
+
+        // I use fro each to display all the values stores in fruits in the page
+        for(var i = 0; i < fruits.length; i++) {
+            document.write(fruits[i] + "<br/>");
+        }
+        document.write("<br/>");
+        // Using foreach
+        fruits.forEach(element => {
+            document.write(element + "<br/>");
+        });
+    </script> -->
+
+    <!-- Complex Data -->
+    <!-- <script>
+        document.write(typeof {firstname: "John", lastName: "Otilla", address: "Inascan"} + "<br/>");
+        document.write(typeof ["Apples", "Banana", "Orange"] + "<br/>");
+        document.write(typeof null + "<br/>");
+        document.write(typeof function(){});
+    </script> -->
 
     <!-- Javascript Data Types -->
+
+
+
+
+    <!-- Function in Javascript-->
+
+    <!-- Simple invoking the function writeText -->
+    <!-- <script>
+
+        function writeText(text) {
+            document.write(text);
+        }
+
+        writeText("Hello John Otillas");
+    </script> -->
+
+    <!-- Adding an event when calling a function -->
+    <!-- Number 1: <input id="num1" type="number"> <br/><br/>
+    Number 2: <input id="num2" type="number"> <br/><br/><br/>
+
+    Result: <span id="result"></span> <br/><br/>
+
+    <button onclick="addFunction()">Add</button>
+
+    <script>
+        function addFunction() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+
+            let sum = num1 + num2;
+
+            if (isNaN(sum)) {
+                alert('invalid input!')
+            } else {
+                document.getElementById("result").innerHTML = sum;
+            }
+        }
+    </script> -->
+
+    <!-- Return Statement -->
+    <!-- <p id="demo">Sum will be printed here...</p>
+
+    <script>
+
+        function addNumber(num1, num2) {
+            let sum = num1 + num2;
+
+            return sum
+        }
+
+        // let ret = addNumber(45, 10);
+
+        // document.write("The sum is " + ret);
+
+        document.getElementById("demo").innerHTML = addNumber(34, 45);
+
+    </script> -->
+
+    <!-- Function in Javascript-->
+
+    <!-- The this keyword -->
+    <!-- <p id="demo">in this example, the <b>person.showDetail()</b> method is called when the button is clicked</p>
+    <button onclick="person.showDetail()">Show Details</button>
+
+    <script>
+        
+        var person = {
+            name: "John C. Otilla",
+            age: 21,
+            showDetail() {
+                alert(this.name + " is " + this.age + " years old.");
+            }
+        };
+
+    </script> -->
+
+    <!-- Object in an object -->
+    <!-- <script>
+
+        let fruits = {
+            mango: {
+                color: "orange",
+                taste: "sweet"
+            },
+
+            apple: {
+                color: "red",
+                taste: "sweet"
+            }
+        };
+
+        document.write(fruits.mango.color);
+
+    </script> -->
+
+    <!-- JS Objects -->
+
 </body>
 </html>
