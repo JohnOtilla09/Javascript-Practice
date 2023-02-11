@@ -322,5 +322,175 @@
 
     <!-- JS Objects -->
 
+    <!-- <script>
+        const myName = "John Otilla";
+        console.log(myName)
+
+        myName = 'Florence Neric';
+        console.log(myName)
+    </script> -->
+
+    <!-- Function in javascript -->
+
+     <script>
+
+        // Traditional functio
+        // function printMyName(name) {
+        //     console.log("Hello i'm " + name)
+        // }
+
+        // printMyName("John C. Otilla")
+
+        // Other way to write function
+        // const printMyName = (name, age) => {
+        //     console.log("Hello I'm " + name + " I'm " + age + "years old.")
+        // };
+
+        // printMyName('John C. Otilla', 21)
+
+        // Simple calculator
+        // let calculator = number => number + number
+
+        // console.log("The answer is " + calculator(2));
+        // Simple calculator
+
+    </script> -->
+
+    <!-- Function in javascript -->
+
+    <!-- Classes in Javascript -->
+
+    <script>
+
+        // // This is the class human
+        // class Human {
+        //     constructor(gender, favorite) {
+        //         this.gender = gender;
+        //         this.favorite = favorite;
+        //     }
+
+        //     printHuman = () => {
+        //         console.log("I'm a beautiful " + this.gender + " my favorite doing " + this.favorite);
+        //     };
+        // }
+
+
+        // // this is the class person
+        // class Person extends Human {
+
+        //     constructor(name, age) {
+        //         super();
+        //         this.name = name;
+        //         this.age = age;
+        //     }
+
+        //     printMyName = () => {
+        //         console.log("Hello i'm " + this.name + " I am " + this.age + " years old.");
+        //     };
+
+        // }
+
+        // const human = new Human('Female', 'Reading Bible');
+        // const person = new Person('Florence Neric', '21');
+        // person.printMyName();
+        // human.printHuman();
+
+        // This is the class human
+        // class Human {
+        //         gender = "Female";
+        //         favorite = "Reading Bible";
+
+        //     printHuman = () => {
+        //         console.log("I'm a beautiful " + this.gender + " my favorite doing " + this.favorite);
+        //     };
+        // }
+
+        // this is the class person
+        // class Person extends Human {
+        //         name = "Al gabriel Lozada";
+        //         age = 21;
+
+        //     printMyName = () => {
+        //         console.log("Hello i'm " + this.name + " I am " + this.age + " years old.");
+        //     };
+
+        // }
+
+        // const human = new Human();
+        // const person = new Person();
+        // person.printMyName();
+        // human.printHuman();
+
+        // Spread Operator : use of split up elements OR object properties
+        // Spread Operator in array in javascript
+        console.log("Spread and Rest Operator")
+
+        const number = [1, 2, 3];
+        const newNumber = [...number, 4, 5, 6];
+
+        console.log("Spread Operator in array " + newNumber);
+
+        // Spread Operator in object in javascript
+        const person = {
+            name: 'Florence'
+        }
+
+        const newPerson = {
+            ...person,
+            age: 22
+        }
+
+        console.log("Spread Operator in Person object: " + newPerson.name)
+        // Spread Operator : use of split up elements OR object properties
+
+        // Rest Operator
+        const filter = (...args) => {
+            return args.filter(el => el === 1);
+        }
+
+        console.log("Rest operator in function " + filter(1, 2, 3));
+
+        // Destructuring in javascript in Array
+        let name = ["John", "Florence", "Jeremy"];
+
+        [name1, name2] = name; // this part the index 0 and 1
+        [name1, , name3] = name; // skip one to get the name 3 "Jeremy"
+
+        console.log("Destructuring " + name1 + " " + name2)
+        console.log("Destructuring " + name1 + " " + name3)
+
+        // Destructuring in javascript in Objects
+        let names = {names1: 'John', names2: 'Aljon', names3: 'Kim'};
+        let {names1} = names;
+
+        console.log("Destructuring Objects " + name1);
+
+        // Reference and premitive type refresher
+        const persons = {
+            name: 'Max'
+        };
+
+        const secondPerson = {
+            ...persons
+        };
+
+        console.log(secondPerson);
+        // Reference and premitive type refresher
+
+        // Refreshing Array Function
+        console.log("Refreshing Array Function");
+        const numbers = [1, 2, 3];
+
+        const doubleNumberArray = numbers.map((num) => {
+            return num * 2;
+        });
+
+        console.log(numbers)
+        console.log(doubleNumberArray)
+
+
+    </script>
+
+    <!-- Classes in Javascript -->
 </body>
 </html>
